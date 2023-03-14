@@ -14,7 +14,7 @@ ngc registry resource download-version nvidia/riva/riva_quickstart:2.9.0
 export NGC_API_KEY=<API_KEY>
 ```
 ### go to: in config.sh
-
+[a full version may be seen HERE](config.sh)
 #### choose models
 ```bash
 service_enabled_asr=true
@@ -27,7 +27,7 @@ service_enabled_nmt=false
 language_code=("en-US")
 asr_acoustic_model=("conformer")
 ```
-#### Offline w/ CPU decoder
+#### offline w/ CPU decoder
 ```bash
 "${riva_ngc_org}/${riva_ngc_team}/rmir_asr_${asr_acoustic_model}_${modified_lang_code}_ofl${decoder}:${riva_ngc_model_version}"
 ```
