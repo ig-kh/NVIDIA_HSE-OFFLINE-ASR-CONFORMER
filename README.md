@@ -87,5 +87,11 @@ ffmpeg --help
 ```
 
 ```console
-ffmpeg -i /opt/riva/wav/en-US_sample.wav -f audio_spec.txt
+ffmpeg -i /opt/riva/wav/en-US_sample.wav -f ffmetadata audio_spec.txt
 ```
+![ffmpeg_1](https://user-images.githubusercontent.com/122811954/226694532-2afca5f9-25aa-458b-907f-05853860b7ce.png)
+```console
+cat audio_spec.txt
+```
+![ffmpeg_2](https://user-images.githubusercontent.com/122811954/226694732-937245a0-0fbf-48ef-9d6a-01a052462699.png)
+
