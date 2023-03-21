@@ -83,6 +83,7 @@ We will use FFMPEG software for further work:
 ```console
 apt-get update
 apt-get install ffmpeg
+ffmpeg --help
 ```
 
 ```console
