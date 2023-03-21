@@ -73,7 +73,7 @@ sudo bash riva_start_client.sh
 *inside container*
 ```console
 cd wav
-riva_asr_client --audio_file=/opt/riva/wav/en-US_sample.wav --output_filename=./en-US_sample.txt
+riva_asr_client --model_name conformer-en-US-asr-offline --audio_file=/opt/riva/wav/en-US_sample.wav --output_filename=./en-US_sample.txt
 cat ./en-US_sample.txt
 ```
 
