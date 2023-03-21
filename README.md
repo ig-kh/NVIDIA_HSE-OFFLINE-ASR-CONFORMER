@@ -76,9 +76,15 @@ cd wav
 riva_asr_client --audio_file=/opt/riva/wav/en-US_sample.wav --output_filename=./en-US_sample.txt
 cat ./en-US_sample.txt
 ```
-*<ctrl+a+d>*
 
 # V: work with samples
+In this part, we shall be precise any formats, codecs and etc.
+We will use FFMPEG software for further work:
 ```console
-apt install ffmpeg
+apt-get update
+apt-get install ffmpeg
+```
+
+```console
+ffmpeg -i /opt/riva/wav/en-US_sample.wav -f audio_spec.txt
 ```
