@@ -77,7 +77,7 @@ riva_asr_client --model_name conformer-en-US-asr-offline --audio_file=/opt/riva/
 cat ./en-US_sample.txt
 ```
 
-# V: work with samples
+# V: research sample format & FFMPEG ToolKit
 In this part, we shall be precise any formats, codecs and etc.
 We will use FFMPEG software for further work:
 ```console
@@ -97,3 +97,8 @@ cat audio_spec.txt
 
 Now we obtained all necessary information about sample. After acomplishing the next step - recording own sample, we will convert it accordingly to newly aquired information on desired audio format.
 
+To sum up, these parameters are our restrictions (Table below contains values and description for each parameter to ease further understanding of convertation and the process config):
+
+[INSERT TABLE]
+
+# VI: recording a sample & Audacity Software
