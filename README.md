@@ -101,4 +101,4 @@ To sum up, these parameters are our restrictions (Table below contains values an
 
 [INSERT TABLE]
 
-# VI: recording a sample & Audacity Software
+# VI: recording a sample & convertation
