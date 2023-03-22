@@ -102,3 +102,6 @@ To sum up, these parameters are our restrictions (Table below contains values an
 [INSERT TABLE]
 
 # VI: recording a sample & convertation
+```console
+ffmpeg -i "https://github.com/ig-kh/NVIDIA_HSE-OFFLINE-ASR-CONFORMER/blob/main/new_sample.m4a" -c:a pcm_s16le converted_sample.wav
+```
