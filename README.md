@@ -95,3 +95,5 @@ cat audio_spec.txt
 ```
 ![ffmpeg_2](https://user-images.githubusercontent.com/122811954/226694732-937245a0-0fbf-48ef-9d6a-01a052462699.png)
 
+Now we obtained all necessary information about sample. After acomplishing the next step - recording own sample, we will convert it accordingly to newly aquired information on desired audio format.
+
