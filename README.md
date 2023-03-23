@@ -31,6 +31,13 @@ asr_acoustic_model=("conformer")
 ```bash
 "${riva_ngc_org}/${riva_ngc_team}/rmir_asr_${asr_acoustic_model}_${modified_lang_code}_ofl${decoder}:${riva_ngc_model_version}"
 ```
+To turn off Punctuation Checking using BERT (due to our computational resources) there is nedd to comment the following string:
+
+```bash
+
+```
+It is turned on by default for all language-codes of ASR models.
+
 (Also comment blocks of code with nlp/tts/mnt/punctuation models)
 
 # II: initializations
@@ -100,8 +107,3 @@ Now we obtained all necessary information about sample. After acomplishing the n
 To sum up, these parameters are our restrictions (Table below contains values and description for each parameter to ease further understanding of convertation and the process config):
 
 [INSERT TABLE]
-
-# VI: recording a sample & convertation
-```console
-ffmpeg -i "https://github.com/ig-kh/NVIDIA_HSE-OFFLINE-ASR-CONFORMER/blob/main/new_sample.m4a" -c:a pcm_s16le converted_sample.wav
-```
