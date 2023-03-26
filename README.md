@@ -88,7 +88,7 @@ CONTAINER ID | IMAGE | COMMAND | CREATED | STATUS | PORTS | NAMES
 7f3f609403d7 | nvcr.io/nvidia/riva/riva-speech:2.9.0 | "/opt/nvidia/nvidia_…" | 57 seconds ago | Up 51 seconds | 0.0.0.0:50051->50051/tcp, :::50051->50051/tcp, 0.0.0.0:49155->8000/tcp, :::49155->8000/tcp, 0.0.0.0:49154->8001/tcp, :::49154->8001/tcp, 0.0.0.0:49153->8002/tcp, :::49153->8002/tcp | riva-speech
 
 
-if eroors took place, it is recommended to run "sudo bash riva_clean.sh" and repeat init; though you may preserve containers by answering "n" to the first two prompts
+if errors took place, it is recommended to run "sudo bash riva_clean.sh" and repeat init; though you may preserve containers by answering "n" to the first two prompts
 ```console
 sudo bash riva_start.sh
 ```
