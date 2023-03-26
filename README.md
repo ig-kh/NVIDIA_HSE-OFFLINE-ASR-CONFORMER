@@ -1,3 +1,19 @@
+# O: Hardware & Limitations met
+Riva services and model were deployed on rather limited computational powers:
+```console
+nvidia-smi
+```
+![image](https://user-images.githubusercontent.com/122811954/227789877-f7fc96ab-06ed-42d5-b770-40c48ef44435.png)
+```console
+lscpu
+```
+![image](https://user-images.githubusercontent.com/122811954/227789969-9ee35c60-a09b-4c34-b719-1d867ca9f93e.png)
+```console
+lscpu | egrep 'Model name|Socket|Thread|NUMA|CPU\(s\)'
+```
+![image](https://user-images.githubusercontent.com/122811954/227790076-fbaeb224-2d08-4154-b3c0-25a8c8e4f609.png)
+
+While available GPU memory is = ; the chosen model, CTC-Conformer with offline recognition, requires 3100
 # I: installations 
 
 ## obtain ngc
