@@ -14,9 +14,9 @@ lscpu | egrep 'Model name|Socket|Thread|NUMA|CPU\(s\)'
 ![image](https://user-images.githubusercontent.com/122811954/227790076-fbaeb224-2d08-4154-b3c0-25a8c8e4f609.png)
 
 While available GPU memory is 4095 MiB = 4294.967 MB; the chosen model, CTC-Conformer with offline recognition, requires 3100 MB.
-# I: installations 
+# I: Installations 
 
-## Obtain ngc
+## obtain ngc
 ```console
 wget --content-disposition https://ngc.nvidia.com/downloads/ngccli_linux.zip && unzip ngccli_linux.zip && chmod u+x ngc-cli/ngc
 find ngc-cli/ -type f -exec md5sum {} + | LC_ALL=C sort | md5sum -c ngc-cli.md5
