@@ -106,4 +106,10 @@ Now we obtained all necessary information about sample. After acomplishing the n
 
 To sum up, these parameters are our restrictions (Table below contains values and description for each parameter to ease further understanding of convertation and the process config):
 
-[INSERT TABLE]
+| Property        | Value                       | Description                                                                                                                                                                                                                              |
+|-----------------|-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Encoding format | pcm_s16le                   | Audio is recoreded and digitalized via *pulse-code modulation* using *signed int_16* values with *little endians (...le)* - byte word-writing order in which the "little end" (least significant value in the sequence) is stored first. |
+| Frequency, Hz   | 16000                       | Sampling frequency of this file.                                                                                                                                                                                                         |
+| Quality, Kbps   | 256                         | A second of audio is stored within 256 kilobits of data.                                                                                                                                                                                 |
+| Encoder         | Lavf58.29.100/Lavf58.45.100 | Algorithm for audio encoding from *libav* - the ffmpeg project's fork.                                                                                                                                                                   |
+| Audio channel   | Mono                        | Audio file includes only *one* audio track.                                                                                                                                                                                              |
