@@ -1,4 +1,4 @@
-# O: Hardware & Limitations met
+# O: Hardware & Limitations meet
 Riva services and model were deployed on rather limited computational powers:
 ```console
 nvidia-smi
