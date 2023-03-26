@@ -13,7 +13,7 @@ lscpu | egrep 'Model name|Socket|Thread|NUMA|CPU\(s\)'
 ```
 ![image](https://user-images.githubusercontent.com/122811954/227790076-fbaeb224-2d08-4154-b3c0-25a8c8e4f609.png)
 
-While available GPU memory is 4095 MiB = 4294.967 MB; the chosen model, CTC-Conformer with offline recognition, requires 3100 MB.
+While available GPU memory is 4095 MiB = 4294.967 MB; the chosen model, Conformer with offline recognition, requires 3100 MB.
 # I: Installations 
 
 ## obtain ngc
