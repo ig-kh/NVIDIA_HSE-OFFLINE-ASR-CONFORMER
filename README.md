@@ -13,10 +13,10 @@ lscpu | egrep 'Model name|Socket|Thread|NUMA|CPU\(s\)'
 ```
 ![image](https://user-images.githubusercontent.com/122811954/227790076-fbaeb224-2d08-4154-b3c0-25a8c8e4f609.png)
 
-While available GPU memory is = ; the chosen model, CTC-Conformer with offline recognition, requires 3100
+While available GPU memory is 4095 MiB = 4294.967 MB; the chosen model, CTC-Conformer with offline recognition, requires 3100 MB.
 # I: installations 
 
-## obtain ngc
+## Obtain ngc
 ```console
 wget --content-disposition https://ngc.nvidia.com/downloads/ngccli_linux.zip && unzip ngccli_linux.zip && chmod u+x ngc-cli/ngc
 find ngc-cli/ -type f -exec md5sum {} + | LC_ALL=C sort | md5sum -c ngc-cli.md5
@@ -56,7 +56,7 @@ It is turned on by default for all language-codes of ASR models.
 
 (Also comment blocks of code with nlp/tts/mnt/punctuation models)
 
-# II: initializations
+# II: Initializations
 ```console
 cd riva_quickstart_v2.9.0
 ```
@@ -88,11 +88,11 @@ if eroors took place, it is recommended to run "sudo bash riva_clean.sh" and rep
 ```console
 sudo bash riva_start.sh
 ```
-# III: starting client
+# III: Starting client
 ```console
 sudo bash riva_start_client.sh
 ```
-# IV: test sample
+# IV: Test sample
 *inside container*
 ```console
 cd wav
@@ -100,7 +100,7 @@ riva_asr_client --model_name conformer-en-US-asr-offline --audio_file=/opt/riva/
 cat ./en-US_sample.txt
 ```
 
-# V: research sample format & FFMPEG ToolKit
+# V: Research sample format & FFMPEG ToolKit
 In this part, we shall be precise any formats, codecs and etc.
 We will use FFMPEG software for further work:
 ```console
@@ -117,8 +117,6 @@ ffmpeg -i /opt/riva/wav/en-US_sample.wav -f ffmetadata audio_spec.txt
 cat audio_spec.txt
 ```
 ![ffmpeg_2](https://user-images.githubusercontent.com/122811954/226694732-937245a0-0fbf-48ef-9d6a-01a052462699.png)
-
-Now we obtained all necessary information about sample. After acomplishing the next step - recording own sample, we will convert it accordingly to newly aquired information on desired audio format.
 
 To sum up, these parameters are our restrictions (Table below contains values and description for each parameter to ease further understanding of convertation and the process config):
 
