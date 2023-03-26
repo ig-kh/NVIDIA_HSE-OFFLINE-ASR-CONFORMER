@@ -47,11 +47,15 @@ asr_acoustic_model=("conformer")
 ```bash
 "${riva_ngc_org}/${riva_ngc_team}/rmir_asr_${asr_acoustic_model}_${modified_lang_code}_ofl${decoder}:${riva_ngc_model_version}"
 ```
-To turn off Punctuation Checking using BERT (due to our computational resources) there is nedd to comment the following string:
+To turn off Punctuation Checking using BERT (due to our computational resources) there is nedd to comment the following string in list of punctuation checkers for asr:
 
 ```bash
-
+models_asr+=(
+            #"${riva_ngc_org}/${riva_ngc_team}/models_nlp_punctuation_bert_base_${modified_lang_code}:${riva_ngc_model_version}-${riva_target_gpu_family}-${riva_tegra_platform}"
+        )
 ```
+This step is taken due to the limitation in GPU, which is not enough for deployment of BERT-based model.
+
 It is turned on by default for all language-codes of ASR models.
 
 (Also comment blocks of code with nlp/tts/mnt/punctuation models)
