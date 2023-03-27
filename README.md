@@ -103,6 +103,7 @@ cd wav
 riva_asr_client --model_name conformer-en-US-asr-offline --audio_file=/opt/riva/wav/en-US_sample.wav --output_filename=./en-US_sample.txt
 cat ./en-US_sample.txt
 ```
+![image](https://user-images.githubusercontent.com/122811954/227925831-c0736d4d-7d6b-4004-9e0e-1ba1a59b520a.png)
 
 # V: Research sample format & FFMPEG ToolKit
 In this part, we shall be precise any formats, codecs and etc.
